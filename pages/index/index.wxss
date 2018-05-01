@@ -1,0 +1,8 @@
+swiper{
+  height: 1080rpx;
+}
+image{
+  display: block;
+  width: 750rpx;
+  height: 100%;
+}

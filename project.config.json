@@ -1,0 +1,64 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wx67d8fc31f9fb4eef",
+	"projectname": "%E6%AF%94%E8%B5%9B%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "school",
+					"pathName": "pages/school/school",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 1,
+					"name": "desc",
+					"pathName": "pages/desc/desc",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "desc",
+					"pathName": "pages/major/major",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "desc",
+					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "desc",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1001"
+				}
+			]
+		}
+	}
+}

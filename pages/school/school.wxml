@@ -1,0 +1,22 @@
+<!--pages/school/school.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"circular="{{circular}}">
+  <block wx:for="{{imgUrl}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='items-list'>
+  <view class = 'pro-item' wx:for = "{{proList}}" bindtap = 'toDetail' data-index = '{{index}}'>
+    <image class = 'pro-logo' src = '{{item.schoolLogo}}'></image>
+    <view class = 'pro-body'>
+      <view class = 'pro-title'>{{item.school}}</view>
+      <text class = 'pro-desc'>{{item.description}}</text>
+      <view class = 'footer'>
+        <image class = 'btn-detail' src ='/img/lianjie.jpg' ></image>
+        <image class = 'btn-join' src ='/img/jinru.jpg' ></image>
+      </view>
+    </view>
+  </view>
+</view>

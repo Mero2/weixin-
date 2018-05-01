@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/school/school",
+    "pages/desc/desc"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5eA",
+    "navigationBarTitleText": "考研choice",
+    "navigationBarTextStyle":"white"
+  }
+}
