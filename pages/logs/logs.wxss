@@ -1,8 +1,22 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: #5eA;
+}
 .log-list {
   display: flex;
   flex-direction: column;
-  padding: 40rpx;
-}
+  padding: 40rpx; 
+}  
 .list-item{
-  margin-top: 40rpx;
-}
+  margin-top: 2rpx; 
+  flex: 1;
+  border: 1px solid black;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  border-radius: 40rpx;
+  background-color: #5ff;
+  color: gray;
+  text-align: center;
+}  

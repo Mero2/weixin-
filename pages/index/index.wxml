@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--index.wxml--> 
 <swiper autoplay="true" interval="2000"allowSlideNext = "false" allowSlidePrev = "false">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
@@ -6,4 +6,9 @@
     </swiper-item>
   </block>
 </swiper>
-<view>这是一个关于专业及学校查询的小应用</view>
+  <view class ="footer"bindtap = "tomajor">
+    <button type = "primary"size = "mini">
+      <text>{{time}}秒后自动跳转，点击跳过</text>
+    </button>
+  </view>
+

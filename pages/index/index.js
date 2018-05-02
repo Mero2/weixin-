@@ -7,19 +7,28 @@ Page({
     imgUrls:[
         '/img/1.jpg',
         '/img/2.jpg',
-        '/img/3.jpg'
+        '/img/3.jpg',
+        '/img/4.jpg'
     ],
+    time:6,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   onLoad: function () {
-    setTimeout(function () {
-      wx.redirectTo({
-        url: '../logs/logs'
+    var time = 5;
+    this.timer = setInterval(() =>{
+      this.setData({
+        time:time--
       })
-    }, 5000)
+      if(time == 0){
+        clearInterval(this.timer);
+        wx.redirectTo({
+          url: '../logs/logs',
+        })
+      }
+    },1000)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -55,4 +64,10 @@ Page({
       hasUserInfo: true
     })
   },
+  tomajor: function() {
+    clearInterval(this.timer);
+    wx.redirectTo({
+      url: '../logs/logs',
+    })
+  }
 })

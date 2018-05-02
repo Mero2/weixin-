@@ -1,8 +1,6 @@
 <!--logs.wxml-->
-   <view class="container log-list">
+<view class="container log-list">
   <block wx:for="{{majorList}}" wx:for-item="log">
-   <text class = "list-item"  bindtap = 'toSchool'>{{index + 1}}. {{log}}</text> 
+   <view class = "list-item" data-index = "{{index}}"  bindtap = 'toSchool'>{{index+1}}. {{log}}</view> 
   </block>
 </view>   
-<!-- <view bindtap = 'toSchool'>点击跳转到学校</view> -->
-<!-- <view wx:for = "{{majorList}}"></view> -->

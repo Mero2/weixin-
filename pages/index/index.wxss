@@ -1,8 +1,18 @@
 swiper{
-  height: 1080rpx;
+  height:100vh;  
+  position: relative; 
 }
 image{
   display: block;
   width: 750rpx;
   height: 100%;
+}
+.footer{
+  position: fixed;
+  left: 25%;
+  bottom: 20rpx;
+  text-align: center; 
+  font-size: 50rpx;
+  padding: 92vh 0 0;
+  color: gray;
 }

@@ -5,18 +5,9 @@ Page({
   onLoad: function () {
     this.getmajorList();
   },
-  // toSchool:function(event){
-  //   console.log(event);
-  //   var self = this;
-  //   // var majorIndex = index;
-  //   wx.navigateTo({
-  //     url: '/pages/school/school'//?index=' + majorIndex,
-  //   })
-  // },
   toSchool: function (e) {
-    console.log(e);
+    console.log(e)
     var index = e.currentTarget.dataset.index;
-    console.log(index);
     var majorList = this.data.majorList;
     var major = majorList[index];
     wx.navigateTo({
