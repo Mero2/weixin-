@@ -11,7 +11,7 @@ Page({
     var majorList = this.data.majorList;
     var major = majorList[index];
     wx.navigateTo({
-      url: '/pages/school/school?major='+ major,
+      url: '/pages/school/school?major='+ major + '&majorindex=' + index,
     })
   },
   getmajorList: function () {

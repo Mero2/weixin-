@@ -97,148 +97,72 @@ Page({
       url: '/pages/desc/desc?school='+school,
     })
   },
-  getProList: function(){
+  getProList:function() {
     var self = this;
-    // console.log(self.options.major)
+    var url;
+    var index = parseInt(self.options.majorindex)+ 1;
+    console.log(index);
     switch(self.options.major){
       case "电气工程及自动化":
-      wx.request({
-        url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/dianqirank',//关于学校的数据
-        method: 'GET',
-        success: function (res) {
-          console.log(res);
-          self.setData({
-            proList: res.data,
-          })
-        }
-      })
-      break;
+url=
+'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/dianqirank';//关于学校的数据
+        break;
       case "机械设计制造及自动化":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/jixiegongcheng',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
-      break;
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/jixiegongcheng';//关于学校的数据
+        break;
       case "测控技术与仪器":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/cekongjishu',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/cekongjishu';//关于学校的数据
         break;
       case "土木工程":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/tumugongcheng',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/tumugongcheng';//关于学校的数据
         break;
       case "金融学":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/jinrong',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/jinrong';//关于学校的数据
         break;
       case "会计学":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/kuaiji',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/kuaiji';//关于学校的数据
         break;
       case "英语":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/english',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/english';//关于学校的数据
         break;
       case "法学":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/faxue',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/faxue';//关于学校的数据
         break;
       case "临床医学":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/linchuangyixue',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/linchuangyixue';//关于学校的数据
         break;
       case "国际经济与贸易":
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/guojijingjiyvmaoyi',
-          method: 'GET',
-          success: function (res) {
-            console.log(res);
-            self.setData({
-              proList: res.data,
-            })
-          }
-        })
+        url = 'https://www.easy-mock.com/mock/5adc71f4de32ef341cc7ed48/wxsubject/guojijingjiyvmaoyi';//关于学校的数据
         break;
     }
-
-
-
-
-    // console.log(self.options);
-    // wx.request({
-    //   url:'',
-    //   method:'GET',
-    //   success:function(res){
-    //     console.log(res);
-    //     self.setData({
-    //       proList:res.data,
-    //     })
-    //   }
-    // })
+    wx.request({
+      url:url,
+      method:'GET',
+      success:function(res){
+        console.log(res);
+        console.log(res.data.data[index]);
+        let schooldata = res.data.data;
+        var schoolArr = [];
+        for(let i = 0; i < 10; i ++) {
+          schoolArr[i] = new Array();
+        }
+        var schoolList = schoolArr.map(function(val) {
+          return {...val};
+        })
+        for(let i = 0; i < 10; i ++) {
+          var j = i + 1;
+        schoolList[i].school = schooldata[j][0];
+        schoolList[i].schoolLogo = schooldata[j][3];
+        schoolList[i].description = schooldata[j][4];
+        }
+        console.log(schoolList);
+        console.log(schoolArr);
+        self.setData({
+          proList:schoolList,
+        })
+      }
+    })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
