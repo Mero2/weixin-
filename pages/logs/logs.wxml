@@ -1,6 +1,6 @@
 <!--logs.wxml-->
 <view class="container log-list">
-  <block wx:for="{{majorList}}" wx:for-item="log">
-   <view class = "list-item" data-index = "{{index}}"  bindtap = 'toSchool'>{{index+1}}. {{log}}</view> 
+  <block wx:for="{{majorList}}" wx:key = "index"wx:for-item="log">
+   <view class = "list-item" hover-class = "tags-item {{currentItem==item.index?'active-tag':''}}" data-index = "{{index}}"  bindtap = 'toSchool'>{{index+1}}. {{log}}</view> 
   </block>
 </view>   

@@ -1,7 +1,7 @@
 .container{
   width: 100%;
   height: 100vh;
-  background-color: #5eA;
+   background-color:#EDEDED; 
 }
 .log-list {
   display: flex;
@@ -9,14 +9,19 @@
   padding: 40rpx; 
 }  
 .list-item{
-  margin-top: 2rpx; 
+  margin-top: 4rpx; 
   flex: 1;
-  border: 1px solid black;
+  /* border: 1px solid gray; */
   height: 100rpx;
   width: 100%;
   line-height: 100rpx;
-  border-radius: 40rpx;
-  background-color: #5ff;
-  color: gray;
-  text-align: center;
-}  
+   border-radius: 10rpx; 
+  background-color: #fff;
+  color: #000;
+  text-indent:30rpx;
+  /* border-collapse:collapse; */
+  /* text-align: center; */
+} 
+.tags-item{
+  background-color: #F8F8FF;
+} 

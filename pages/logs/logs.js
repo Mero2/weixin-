@@ -1,6 +1,7 @@
 Page({
   data: {
-    majorList:null
+    majorList:null,
+    'currentItem':null
   },
   onLoad: function () {
     this.getmajorList();
@@ -10,6 +11,9 @@ Page({
     var index = e.currentTarget.dataset.index;
     var majorList = this.data.majorList;
     var major = majorList[index];
+    this.setData({
+      'currentItem':index
+    });
     // console.log(majorList, 'here is lgs')
     wx.navigateTo({
       url: '/pages/school/school?major='+ major + '&majorindex=' + index,
