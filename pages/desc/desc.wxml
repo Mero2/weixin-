@@ -1,17 +1,18 @@
-<image class = 'banner' src = "/img/1.jpg"></image>
+<image class = 'banner' src = "http://os310ujuc.bkt.clouddn.com/1.jpg"></image>
 <view class = 'block'>
-  <view class = 'block-title'>专业介绍</view>
-  <view class = 'block-desc'>测控技术与仪器专业，测控技术与仪器专业，测控技术与仪器专业，测控技术与仪器专业，测控技术与仪器专业</view>
-</view>
-<view class = 'block'>
-  <view class = 'block-title'>专业前景</view>
-  <view class = 'block-desc'>测控技术与仪器专业将来铁定的电子工程师，必然是硬件方面的，像我们就是搞软件的，为啥呢，因为我觉得，软件比硬件简单，更加享受参与每人的一小步改变世界之旅</view>
+  <view class = 'block-title'>分数预测</view>
+  <view class = 'block-desc'>{{obj.mark}}</view>
 </view>
 <view class = 'block'>
   <view class = 'block-title'>考试科目</view>
-  <view class = 'block-desc'>测控技术与仪器专业考试科目有英语一，英语二，数学一，数学二，政治，专业课，分初试和复试，都需要努力努力在努力</view>
+  <view class = 'block-desc'>{{obj.pro}}</view>
 </view>
 <view class = 'block'>
-  <view class = 'block-title'>分数预测</view>
-  <view class = 'block-desc'>在我看来，选择的难点在于无法合适的估计自己的实力，虽然梦想总是要有的，但是吧，有时候的眼高手低，才是二战的起因，我们这个版块儿，提供的就是你估计自己实力的平台</view>
+  <view class = 'block-title'>专业介绍</view>
+  <view class = 'block-desc'>{{obj.detail}}</view>
 </view>
+<!-- <view class = 'block'>
+  <view class = 'block-title'>专业前景</view>
+  <view class = 'block-desc'></view>
+</view> -->
+

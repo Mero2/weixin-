@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    obj: null
   },
 
   /**
@@ -13,8 +13,14 @@ Page({
    */
   onLoad: function (options) {
     console.log(options);
+    this.otherHandle(options);
   },
-
+  otherHandle: function (information) {
+    this.setData({
+      obj: information
+    })
+    console.log(information)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -14,8 +14,8 @@
       <view class = 'pro-title'>{{item.school}}</view>
       <text class = 'pro-desc'>{{item.description}}</text>
       <view class = 'footer'>
-        <image class = 'btn-detail' src ='/img/lianjie.jpg' ></image>
-        <image class = 'btn-join' src ='/img/jinru.jpg' ></image>
+        <image class = 'btn-detail' src ='http://os310ujuc.bkt.clouddn.com/lianjie.jpg' ></image>
+        <image class = 'btn-join' src ='http://os310ujuc.bkt.clouddn.com/jinru.jpg' ></image>
       </view>
     </view>
   </view>
