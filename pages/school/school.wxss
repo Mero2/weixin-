@@ -43,14 +43,22 @@ swiper image{
 .footer{
   overflow: hidden;
 }
-.btn-detail{
-  width: 170rpx;
+.footer button{
+  background-color: #5eA;
+  margin-left: 40rpx;
+  width: 300rpx;
+  /* height: 60rpx; */
+  /* line-height: 60rpx;  
+  text-align: center; */
+}
+/* .btn-detail{
+  width: 200rpx;
   height: 52rpx;
   float: left;
-}
-.btn-join{
+} */
+/* .btn-join{
   float: left;
   margin-left: 40rpx;
   width: 170rpx;
   height: 52rpx;
-}
+} */

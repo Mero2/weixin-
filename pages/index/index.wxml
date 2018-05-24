@@ -6,9 +6,11 @@
     </swiper-item>
   </block>
 </swiper>
+<slider bindchange="intervalChange" show-value min="500" max="2000"/> 
   <view class ="footer"bindtap = "tomajor">
     <button type = "primary"size = "mini">
       <text>{{time}}秒后自动跳转，点击跳过</text>
     </button>
   </view>
+  
 

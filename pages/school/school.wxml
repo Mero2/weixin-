@@ -14,11 +14,12 @@
       <view class = 'pro-title'>{{item.school}}</view>
       <text class = 'pro-desc'>{{item.description}}</text>
       <view>
-        <text class="pro-homepage">学校网址：{{item.homepage}}  </text>
+        <text class="pro-homepage" selectable = "true">学校网址：{{item.homepage}}  </text>
       </view>
       
        <view class = 'footer' data-index = '{{index}}' bindtap = 'toDetail'>
-          <image class = 'btn-detail'  src ='http://os310ujuc.bkt.clouddn.com/lianjie.jpg' ></image>       
+          <!-- <image class = 'btn-detail'  src ='http://os310ujuc.bkt.clouddn.com/lianjie.jpg' ></image>        -->
+          <button type = "primary" size = "mini">了解详情</button>
       </view>
     </view>
   </view>

@@ -5,10 +5,9 @@ const app = getApp()
 Page({
   data: {
     imgUrls:[
-        'http://os310ujuc.bkt.clouddn.com/1.jpg',
-        'http://os310ujuc.bkt.clouddn.com/2.jpg',
-        'http://os310ujuc.bkt.clouddn.com/3.jpg',
-        'http://os310ujuc.bkt.clouddn.com/4.jpg'
+        'http://os310ujuc.bkt.clouddn.com/haibao1.jpg',
+        'http://os310ujuc.bkt.clouddn.com/haibao2.jpg',
+        'http://os310ujuc.bkt.clouddn.com/haibao3.jpg',
     ],
     time:6,
     userInfo: {},
