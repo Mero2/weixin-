@@ -8,14 +8,17 @@
   </block>
 </swiper>
 <view class='items-list'>
-  <view class = 'pro-item' wx:for = "{{proList}}" bindtap = 'toDetail' data-index = '{{index}}'>
+  <view class = 'pro-item' wx:for = "{{proList}}"  data-index = '{{index}}'>
     <image class = 'pro-logo' src = '{{item.schoolLogo}}'></image>
     <view class = 'pro-body'>
       <view class = 'pro-title'>{{item.school}}</view>
       <text class = 'pro-desc'>{{item.description}}</text>
-      <view class = 'footer'>
-        <image class = 'btn-detail' src ='http://os310ujuc.bkt.clouddn.com/lianjie.jpg' ></image>
-        <image class = 'btn-join' src ='http://os310ujuc.bkt.clouddn.com/jinru.jpg' ></image>
+      <view>
+        <text class="pro-homepage">学校网址：{{item.homepage}}  </text>
+      </view>
+      
+       <view class = 'footer' data-index = '{{index}}' bindtap = 'toDetail'>
+          <image class = 'btn-detail'  src ='http://os310ujuc.bkt.clouddn.com/lianjie.jpg' ></image>       
       </view>
     </view>
   </view>

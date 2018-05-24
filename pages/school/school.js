@@ -98,16 +98,17 @@ Page({
         for(let i = 0; i < 10; i ++) {
           var j = i + 1;
           schoolList[i].school = schooldata[j][0];
+          schoolList[i].description = schooldata[j][1];
+          schoolList[i].homepage = schooldata[j][2];
           schoolList[i].mark = schooldata[j][3];
-          schoolList[i].detail = schooldata[j][6];
           schoolList[i].pro = schooldata[j][4];
           schoolList[i].schoolLogo = schooldata[j][5];
-          schoolList[i].description = schooldata[j][1];
+          schoolList[i].detail = schooldata[j][6];
         }
         console.log(schoolList)
         self.setData({
-          proList:schoolList,
-          newData: schooldata
+          proList: schoolList,
+          newData: schooldata,
         })
       }
     })

@@ -1,4 +1,4 @@
-<image class = 'banner' src = "http://os310ujuc.bkt.clouddn.com/1.jpg"></image>
+<image class = 'banner' src = "http://os310ujuc.bkt.clouddn.com/kaoyan.jpg"></image>
 <view class = 'block'>
   <view class = 'block-title'>分数预测</view>
   <view class = 'block-desc'>{{obj.mark}}</view>
@@ -15,4 +15,3 @@
   <view class = 'block-title'>专业前景</view>
   <view class = 'block-desc'></view>
 </view> -->
-

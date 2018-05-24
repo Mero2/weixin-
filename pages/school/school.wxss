@@ -16,7 +16,7 @@ swiper image{
   padding: 40rpx;
 }
 .pro-logo{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 190rpx;
   height: 190rpx;
   float: left;
@@ -34,6 +34,11 @@ swiper image{
   font-size: 24rpx;
   color: #9a9a0a;
   line-height: 1.2;
+}
+.pro-homepage{
+  font-size: 24rpx;
+  color: blue;
+  line-height: 1;
 }
 .footer{
   overflow: hidden;
